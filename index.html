@@ -25,7 +25,6 @@ VGGish based Autoencoders" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!--<link rel="stylesheet" href="/disentangled-VAE/assets/css/style.css?v=a1d0163d7ff7431d76ccc13c04f906112e82e0e5"> -->
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 * {
@@ -133,7 +132,7 @@ html {
       <center>
       <h1 class="project-tagline">A demo website for ICACITE-2022</h1>
       
-        <a href="https://github.com/tienmanhptit1312/Disentangle-VAE-for-VC" class="btn">View on GitHub</a>
+        <a href="https://github.com/Sameer-Mann/VoiceConversion" class="btn">View on GitHub</a>
       
       </center>
       
@@ -150,8 +149,7 @@ html {
 
 <h1 id="melspectrogram-visualization">Melspectrogram Visualization</h1>
 
-<p>We conducted experiments on melspectrograms feature and relized that the speaker embedding has significant impact to melspectrograms. This phenomenon 
-explains for our assumption which is there are some common factors represent speaker identity embedded in speaker embedding, the other distinct factors represent linguishtic content extracted in content latent vector. Hence, by swapping speaker embedding between two utterance Disentangle-VAE is able to transform the identity of source speaker to the identity of target speaker.</p>
+<p>We conducted experiments on melspectrograms feature and realized that the speaker embedding has significant impact to melspectrograms. So to transfer the style of one person to another during the decoding the phase the global style information of the target speaker is used(the skip connections).As it can be seen in the spectrograms the content or the shape of the spectrogram of the target is similar to that of source but in target there are some frequencies which were not present in the source.  </p>
 
 <table>
   <thead>
